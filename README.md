@@ -5,16 +5,19 @@ Project Overview
   This project was created in Unity 6.6 using the Universal Render Pipeline (URP). The purpose was to explore how different shading models affect the appearance of 3D objects and how rendering optimization can improve efficiency.
 
 Scene and Features
+  
   The scene includes several primitive shapes, including cubes, spheres, capsules, cylinders, and planes, along with a floating island model I previously created in Blender.
   I experimented with Unlit and Lit materials, metallic and smoothness properties, and a custom toon shader created using Shader Graph.
   I also applied a PNG texture I created for an earlier assignment to a cube to demonstrate how textures provide colors and patterns, while shaders determine how those colors respond to lighting.
 
 Rendering Optimization
+  
   I tested GPU instancing using 48 identical spheres.
   Before enabling GPU Resident Drawer instancing, Unity's Profiler reported 658 draw calls. After enabling instancing, that decreased to 374 draw calls, approximately a 43.2% reduction.
   SetPass calls remained at 34, and the triangle and vertex counts remained unchanged. I also used Unity's Frame Debugger to verify that instanced rendering was occurring.
 
 How to Open the Project
+  
   -Clone or download this repository.
   -Open Unity Hub and select Add Project.
   -Select the downloaded project folder.
@@ -23,6 +26,7 @@ How to Open the Project
   -Press Play to run the scene, or inspect the materials and shaders directly in the Unity Editor.
 
 Loom Video
+
 https://www.loom.com/share/480e5547866a4ef5a92f2a13a9d239e1
 
 Screenshots
